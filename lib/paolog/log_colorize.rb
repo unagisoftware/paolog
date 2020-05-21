@@ -1,11 +1,11 @@
 module Paolog
   class LogColorize
     REXP_REQUEST              = /^Started (?<method>\w+) "(?<path>[\w\/\?\&\=\.]+)" for (?<ip>[\d\.]+) at (?<date>[\w:\-\+\s]+)$/
-    REXP_CONTROLLER           = /^Processing by (?<controller>[\w\:]+)#(?<action>\w+) as (?<format>[\w\/\-\.]+)$/
-    REXP_RENDER               = /^\s*Rendered (?<path>.*\/)(?<template_name>\w+\.html\.\w+) \((?<rendering_time>[\d+\.]+ms)\)$/
-    REXP_RENDER_WITHIN        = /^\s*Rendered (?<path>.*\/)(?<template_name>\w+\.html\.\w+) within (?<layout_name>[\w\d\/]+) ?\((?<rendering_time>[\d+\.]+ms)\)$/
-    REXP_COMPLETE             = /^^Completed (?<status>\d+).*in (?<total_time>[\d+\.]+ms) (?<last_bit>.*)$/
-    REXP_SQL_QUERY            = /^\s*(?<model_load>[\w:]+ Load) \((?<rendering_time>[\d+\.]+ms)\) \s*(?<sql_query>.*)$/
+    REXP_CONTROLLER           = /Processing by (?<controller>[\w\:]+)#(?<action>\w+) as (?<format>[\w\/\-\.]+)$/
+    REXP_RENDER               = /Rendered (?<path>.*\/)(?<template_name>\w+\.html\.\w+) \((?<rendering_time>[\d+\.]+ms)\)$/
+    REXP_RENDER_WITHIN        = /Rendered (?<path>.*\/)(?<template_name>\w+\.html\.\w+) within (?<layout_name>[\w\d\/]+) ?\((?<rendering_time>[\d+\.]+ms)\)$/
+    REXP_COMPLETE             = /Completed (?<status>\d+).*in (?<total_time>[\d+\.]+ms) (?<last_bit>.*)$/
+    REXP_SQL_QUERY            = /(?<model_load>[\w:]+ Load) \((?<rendering_time>[\d+\.]+ms)\) \s*(?<sql_query>.*)$/
 
     def colorize_line(line)
       line = strip_ansi_colors(line)

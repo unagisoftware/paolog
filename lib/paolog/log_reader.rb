@@ -3,7 +3,7 @@ module Paolog
     NUMBER_OF_LINES = 100
 
     def read(limit)
-      limit = [limit, NUMBER_OF_LINES].max
+      limit = limit ? limit.to_i : NUMBER_OF_LINES
       amount = [limit, num_lines].min
 
       readlines(amount)

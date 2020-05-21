@@ -7,7 +7,7 @@ module Paolog
 
     def index
       @lines = reader
-        .read(params[:limit].to_i)
+        .read(params[:limit])
         .map! { |line| colorizer.colorize_line(line).html_safe }
     end
 
