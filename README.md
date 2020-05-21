@@ -1,11 +1,12 @@
 
 # Paolog (aka Paolo el loggero)
 
-## Disclaimer
-
-This project has been based on [browserlog gem](https://travis-ci.org/dieb/browserlog). It has been adapted to work with Rails 5.
-
 Paolog is a live web log viewer for Rails apps.
+
+### Disclaimer
+
+This project was based on [browserlog gem](https://travis-ci.org/dieb/browserlog). It was adapted to work with Rails 5.
+
 
 ## Installation
 
