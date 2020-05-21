@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  position: relative;
+  font: {
+    family: Consolas, Courier New, Courier, monospace;
+    size: 1em;
+  }
+}
+
+#lines {
+  margin: 0;
+  padding: 12px;
+
+  li {
+    margin: 2px 0;
+    list-style: none;
+  }
+}
+
+.resume-scroll-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+  &.hidden {
+    display: none;
+  }
+}
+
+.theme-switch {
+  position: fixed;
+  top: 20px;
+  right: 20px
+}
+
+.space {
+  width: 20px;
+}

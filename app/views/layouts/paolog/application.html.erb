@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @filename %></title>
+  <%= stylesheet_link_tag    "paolog/application", media: "all" %>
+  <%= csrf_meta_tags %>
+</head>
+<body data-theme="dark">
+
+<%= yield %>
+
+</body>
+</html>

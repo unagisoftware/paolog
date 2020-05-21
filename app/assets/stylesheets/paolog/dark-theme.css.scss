@@ -1,0 +1,100 @@
+$cyan: #66D9EF;
+$purple: #AE81FF;
+$yellow: #E6DB74;
+$green: #A6E22E;
+$magenta-like: #F92672;
+
+$default: #fff;
+$background: #272822;
+
+$method: $purple;
+$path: $yellow;
+$ip: $default;
+$date: $default;
+
+$controller: $magenta-like;
+$action: $yellow;
+$format: $purple;
+
+$template-name: $yellow;
+$layout-name: $purple;
+$rendering-time: $cyan;
+
+$model-load: $magenta-like;
+$sql-query: $default;
+
+$total-time: $cyan;
+$status-success: $green;
+$status-failure: red;
+
+[data-theme='dark'] {
+  color: $default;
+  background-color: $background;
+
+  // request
+  .method {
+    color: $method;
+  }
+
+  .path {
+    color: $path;
+  }
+
+  .ip {
+    color: $ip;
+  }
+
+  .date {
+    color: $date;
+  }
+
+  // controller
+  .controller {
+    color: $controller;
+  }
+
+  .action {
+    color: $action;
+  }
+
+  .format {
+    color: $format;
+  }
+
+  // render
+  .template-name {
+    color: $template-name;
+  }
+
+  .layout-name {
+    color: $layout-name;
+  }
+
+  .rendering-time {
+    color: $rendering-time;
+  }
+
+  // load/sql
+  .model-load {
+    color: $model-load;
+  }
+
+  .sql-query {
+    color: $sql-query;
+  }
+
+  // complete
+  .total-time {
+    color: $total-time;
+  }
+
+  .status {
+    &.success {
+      color: $status-success;
+    }
+
+    &.failure {
+      background: $status-failure;
+    }
+  }
+}
